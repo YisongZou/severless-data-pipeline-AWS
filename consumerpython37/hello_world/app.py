@@ -20,7 +20,7 @@ LOG.addHandler(logHandler)
 
 #S3 BUCKET
 REGION = "us-east-2"
-BUCKETNAME = "fangsentiment41"
+BUCKETNAME = "ids721bucket"
 
 ### SQS Utils###
 def sqs_queue_resource(queue_name):
@@ -155,7 +155,7 @@ def lambda_handler(event, context):
     # Process Queue
     for record in event['Records']:
         body = json.loads(record['body'])
-        company_name = body['guid']
+        company_name = body['name']
 
         #Capture for processing
         names.append(company_name)

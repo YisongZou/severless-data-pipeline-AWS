@@ -2,9 +2,9 @@ version = 0.1
 [default]
 [default.deploy]
 [default.deploy.parameters]
-stack_name = "consumerlambda"
+stack_name = "consumerlambda37"
 s3_bucket = "aws-sam-cli-managed-default-samclisourcebucket-lfaj76y7rw10"
-s3_prefix = "consumerlambda"
+s3_prefix = "consumerlambda37"
 region = "us-east-2"
 confirm_changeset = true
 capabilities = "CAPABILITY_IAM"
